@@ -54,6 +54,86 @@ h1 {
             margin-block: 30px;
             font-size: 1.2rem;
         }
+        .ally{
+            display: flex;
+            margin: 50px auto;
+            justify-content: space-between;
+            width: 80%;
+            gap: 30px;
+        }
+
+         h2{
+            color: rgb(5, 8, 84);
+            font-size: 45px;
+            font-family: Poppins, Helvetica, Arial, Lucida, sans-serif;
+            margin: 50px auto;
+            justify-content: space-between;
+            width: 80%;
+        }
+
+        .image{
+            width: 300px;
+            height: 300px;
+            /* opacity: rgba(112, 112, 112, 0.3); */
+            filter: grayscale(100%);
+        }
+
+        h4{
+            color: rgb(0, 14, 84);
+            font-size: 23px;
+            font-family: Poppins, Helvetica, Arial, Lucida, sans-serif;
+            line-height: 25px;
+        }
+        .pi{
+            font-size: 15px;
+            font-family: Poppins, Helvetica, Arial, Lucida, sans-serif;
+            line-height: 28px;
+            font-weight: bold;
+            color: rgb(102, 102, 102);
+        }
+        a{
+            color: rgb(39, 55, 79);
+            font-family: Poppins, Helvetica, Arial, Lucida, sans-serif;
+            font-size: 18px;
+            line-height: 27px;
+            display: flex;
+            align-items: center;
+            text-decoration: none;
+            margin-bottom: 30px;
+        }
+
+        .material-symbols-outlined:hover{
+            transform: translateX(8px);
+            transition: all 0.5s;
+        }
+
+        .Diploma{
+            display: flex;
+            margin: 50px auto;
+            justify-content: space-between;
+            width: 80%;
+            gap: 30px;
+        }
+
+        .Diploma h3{
+            color: rgb(51, 51, 51);
+            font-family: Poppins, Helvetica, Arial, Lucida, sans-serif;
+            font-size: 17px;
+            line-height: 12px;
+        }
+
+        .Diploma p{
+            color: rgb(102, 102, 102);
+            font-family: Poppins, Helvetica, Arial, Lucida, sans-serif;
+            font-weight: bold;
+            font-size: 16px;
+            line-height: 22px;
+            border-bottom: thin solid rgb(0, 136, 255);
+        }
+
+        span{
+            display: block;
+        }
 
         @media (max-width: 980px) {
              .Raw {
@@ -70,7 +150,6 @@ h1 {
 
         .rawimg {
             width: 100%;
-        
         }
         }
         @media (max-width:605px) {
@@ -83,3 +162,47 @@ h1 {
         }
 
     }
+
+    @media (max-width:980px) {
+        .ally{
+            width: 80%;
+            /* border: thin solid black; */
+            flex-direction: column;
+        }
+
+        .Diploma{
+            width: 80%;
+            /* border: thin solid black; */
+            flex-direction: column;
+        }
+
+        .pi{
+            width: 80%;
+            /* border: thin solid black; */
+            flex-direction: column;
+        }
+
+        div{
+            width: 100%;
+        }
+        /* h2{
+            width: 100%;
+        } */
+    }
+
+    @media (min-width:605px) {
+        div .image{
+            width: 100%;
+        }
+
+        h2{
+            font-size: 45px;
+        
+        }
+        h3{
+            font-size: 16px;
+        }
+    }
+
+
+
