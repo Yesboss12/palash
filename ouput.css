@@ -101,10 +101,10 @@ h1 {
             margin-bottom: 30px;
         }
 
-        .material-symbols-outlined:hover{
+        /* .material-symbols-outlined:hover{
             transform: translateX(8px);
             transition: all 0.5s;
-        }
+        } */
 
         .Diploma{
             display: flex;
