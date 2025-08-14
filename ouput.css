@@ -163,44 +163,29 @@ h1 {
 
     }
 
-    @media (max-width:980px) {
-        .ally{
+    @media (max-width:992px) {
+        .ally > div, .Diploma > div{
             width: 80%;
-            /* border: thin solid black; */
-            flex-direction: column;
+            flex: 1 1;
         }
-
-        .Diploma{
-            width: 80%;
-            /* border: thin solid black; */
-            flex-direction: column;
-        }
-
-        .pi{
-            width: 80%;
-            /* border: thin solid black; */
-            flex-direction: column;
-        }
-
-        div{
-            width: 100%;
-        }
-        /* h2{
-            width: 100%;
-        } */
+        
     }
 
-    @media (min-width:605px) {
-        div .image{
-            width: 100%;
+    @media (min-width:600px) {
+        .ally, .Diploma {
+            flex-direction: column;
+        }
+
+        .ally > div, .Diploma > div {
+            flex: 1 1 100%;
         }
 
         h2{
             font-size: 45px;
-        
+            text-align: center;
         }
-        h3{
-            font-size: 16px;
+        p, .pi {
+            font-size: 15px;
         }
     }
 
