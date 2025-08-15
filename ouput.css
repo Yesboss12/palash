@@ -136,42 +136,93 @@ h1 {
             display: block;
         }
 
-        .tour{
+        /* .tour{ */
             /* border: thick solid black; */
-            width: 100%;
-            height: 400px;
+            /* width: 80%; */
+            /* height: 400px;
             margin: 100px auto;
             background-image: linear-gradient(to right, rgba(15, 5, 26, 0.301), rgb(0, 4, 66)), url("https://edu.sqi.ng/wp-content/uploads/2020/08/DSC_9054-scaled.jpg");
             background-repeat: no-repeat;
             background-size: cover;
-            background-position: center;
-            overflow-x: hidden;
-        }
+            background-position: center; */
+            /* overflow-x: hidden; */
+        /* } */
         
-        .box{
+
+        /* .box{ */
             /* border: thin solid black; */
-            display: flex;
+            /* width: 100%; */
+            /* display: flex;
             gap: 60px;
             position: relative;
-            top: 60px;
-            left: 60px;
-        }
+            top: 70px;
+            left: 90px; */
+        /* } */
+        /* iframe{
+            width: 300px;
+        } */
 
-        .btn2{
+        /* .btn2{
             width: 130px;
             height: 50px;
             background-color: rgb(0, 32, 138);
             border-radius: 30px;
-        }
-        .box h1{
+        } */
+        /* .box h1{
             color: white;
             font-size: 45px;
-        }
-        .box p{
+        } */
+        /* .box p{
             color: white;
             font-size: 18px;
             line-height: 25px;
-        }
+        } */
+
+        .tour {
+    margin: 100px auto;
+    padding: 70px 20px; /* instead of fixed top offset */
+    background-image: linear-gradient(to right, rgba(15, 5, 26, 0.301), rgb(0, 4, 66)), 
+                      url("https://edu.sqi.ng/wp-content/uploads/2020/08/DSC_9054-scaled.jpg");
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    color: white;
+    overflow-x: hidden; /* prevent horizontal scroll */
+}
+
+.box {
+    display: flex;
+    flex-wrap: wrap; /* allows wrapping on small screens */
+    gap: 60px;
+    align-items: center;
+}
+
+iframe {
+    width: 300px;
+    max-width: 100%; /* prevents overflow */
+    border-radius: 20px;
+}
+
+.btn2 {
+    width: 130px;
+    height: 50px;
+    background-color: rgb(0, 32, 138);
+    border-radius: 30px;
+    color: white;
+    border: none;
+    cursor: pointer;
+}
+
+.box h1 {
+    font-size: 45px;
+    margin-bottom: 15px;
+}
+
+.box p {
+    font-size: 18px;
+    line-height: 25px;
+    max-width: 500px;
+}
 
         @media (max-width: 980px) {
              .Raw {
@@ -234,7 +285,7 @@ h1 {
             font-size: 16px;
         }
     }
-    @media (max-width:980px) {
+    /* @media (max-width:980px) {
         .tour{
             width: 80%;
             flex-direction: column;
@@ -244,6 +295,22 @@ h1 {
             flex-direction: column;
         }
     }
+
+    @media (max-width:496px) {
+        .box{
+            width: 80%;
+        }
+    } */
+
+    @media (max-width: 768px) {
+    .box {
+        flex-direction: column;
+        gap: 20px;
+    }
+    .box h1, .box p {
+        text-align: left;
+    }
+}
 
 
 
